@@ -218,3 +218,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- ScamShield India ---
+# Node
+node_modules/
+frontend/dist/
+# Datasets and trained models: reproducible, large, licence-encumbered
+backend/data/*
+!backend/data/README.md
+backend/artifacts/*
+!backend/artifacts/README.md
+# Secrets (.env is already covered above; be explicit about local variants)
+.env.local
+.env.*.local
+# macOS
+.DS_Store
+# Datasets/models are also ignored under backend/ml/ in case that layout is used
+backend/ml/data/
+backend/ml/artifacts/
